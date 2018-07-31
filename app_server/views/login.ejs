@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="loginPanel">
+            <div class="panel panel-info">
+                    <div class="panel-heading">
+                    <div class="panel-tittle">Giris Paneli</div>
+                    
+                    </div>
+                    
+                    <div class="panel-body">
+                        <form action="/login" method="POST">
+                            <div style = "margin-bottom: 25px" class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="login-username" type="text" class="form-control" name="username" placeholder="kullanici adi">
+                            </div>
+                            <div style="margin-bottom: 25px" class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input id="password" type="text" class="form-control" name="password" placeholder="parola">
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Giris">
+                            <a href="#" class="btn btn-default">Kayit Ol</a>
+                        </form>
+                    </div>
+                    <div class="panel-footer clearfix">
+
+                        <div class="pull-right">
+                           
+                      <%if(typeof username != 'undefined'){%>  
+<h2><%=username%></h2>
+<%}%>
+<%if(typeof password != 'undefined'){%> 
+<h3><%=password%></h3>
+<%}%>
+                    </div>
+                    </div>
+                        </div>
+    </div>
+</div>
+</div>
